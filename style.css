@@ -1,0 +1,375 @@
+
+/*global sytling*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-image: linear-gradient(62deg, #ffffff 10%, #ffffff 90%);
+}
+button{
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+
+    justify-content: center;
+    align-items: center;
+  
+    border-color: darkslategrey;
+    color: darkslategrey;
+    cursor: pointer;
+
+    transition: background 0.3s;
+}
+button:hover{
+   background: darkslategrey; 
+   color: white;
+}
+h1{
+    font-size:32px;
+}
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size: 12px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight:bold;
+}
+
+/* main-header */
+.main-header{
+    background-color: #1ab2ff;
+    color: white;
+    margin: auto;
+    position:sticky;
+    top: 0px;
+}
+.logo{
+    display: flex;
+    flex: 0.1;
+}
+nav{   
+    width: 95%;
+    padding: 8px;
+    margin: auto;
+
+    align-items: center;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1080px) {
+    body{
+        text-align: center;
+    }
+    .logo{
+        padding:2px;
+    }
+}
+#header-search{
+    padding: 5px;
+    height: 45px;
+ 
+    margin:auto;
+    border-radius:10px;
+    border: none; 
+    
+    display: flex;
+    flex: 0.3;
+}
+.navigation{
+    margin: auto;
+    justify-content:space-around;
+    align-items: center;
+
+    display: flex;         
+    flex: 0.5;
+    list-style: none;
+}
+
+
+/*section - main*/
+.main{
+    padding: 150px;
+    font-size: 24px;
+
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    background: url(./Assets/main-banner/home_banner_road.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    min-height: 60vh;   
+}
+.main h2{
+    padding: 12px;
+}
+.search-main{
+    justify-content: center;
+    display: flex;
+    
+    color: white;
+}
+#search{
+    padding: 5px;
+    height: 45px;
+    width: 550px;
+
+    margin: auto;
+    border-radius:10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+
+    border: none;
+}
+/* benefits */
+.benefits-head{
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+}
+.benefits-img{
+    padding: 20px;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+}   
+.benefits-head h2{
+    font-size: 28px;
+    text-align: center;
+}
+
+
+#inspiration{
+    padding:10px;
+    margin: 10px;
+    justify-content: center;
+}
+#inspiration h2{
+    font-size: 28px;
+    text-align:center;
+    width: 60%;
+}
+.inspirations-wrapper{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
+    text-align:start;
+}
+.inspirations{
+    border-radius: 7px;
+    margin: 13px;
+    padding: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.inspirations img{
+    height: 225px;
+    border-radius: 7px;
+}
+.inspirations h3{
+    color:turquoise;
+    font-size: 14px;
+    font-weight: bold;
+}
+.inspirations h4{
+    font-size: 18px;
+}
+.inspirations-flex{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+
+/* Packages */
+#packages{
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+#packages h2{
+    font-size: 28px;
+    text-align:center;
+    width: 50%;
+}
+.product-cards{
+    padding:20px;
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: start;
+}
+.product-cards h3{
+    color:turquoise;
+    font-size: 14px;
+    font-weight: bold;
+}
+.product-cards h4{
+    font-size: 18px;
+}
+.product-cards h5{
+    color:cadetblue;
+    font-size: 14px;
+
+   
+}
+.product-cards h6{
+    margin: 10px;
+    font-size: 16px;
+    color: darkslategray;
+}
+
+.card-flex1{
+    display: flex;
+    justify-content:space-between;
+}
+.card-flex2{
+    text-align:start;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    border-radius: 7px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.card img{
+    height: 155px;
+    border-radius: 7px;
+}
+
+/* Form */
+#contact{
+    min-height: 80vh;   
+    display: flex;
+    align-items: center;    
+    
+    background: url(./Assets/footer-signin/img.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center; 
+}
+.form-wrapper {
+    border-radius: 7px;
+    background-color: white;
+}
+
+.form-head h2{
+    font-size: 32px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    color:darkslategray;
+}
+#contact button{
+    width: 100%;
+    padding: 14px 42px;
+    background:darkslategrey;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+#contact button:hover{
+    background: white;
+    color: darkslategrey; 
+ }
+.container{
+    max-width: 600px;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0px 12px 0px;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100%/2 - 40px);
+}
+
+form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 7px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+@media(max-width: 584px){
+   .container{
+    max-width: 100%;
+    }
+}
+@media(max-width: 459px){
+    .container .content .category{
+      flex-direction: column;
+    }
+}
+.footer-wrapper{
+    min-height: 55vh;
+    background-color: #ccc;
+    color: darkslategrey;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row; 
+    justify-content:space-evenly; 
+}
+.footer{
+    margin: 25px;
+    padding:25px;
+}
+.footer .logo{
+    margin-bottom: 3px;
+}
+.footer1 h3{
+    font-size: small;
+    align-items: center;
+    text-align: center;
+}
+.footer1-icons{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+.footer1-icons svg{
+    margin: 4px;
+}
+.footer2{
+
+}
